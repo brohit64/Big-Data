@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>com.mycompany.project2.Q6JobControl /Project2 /result/Q6</exec.args>
+                <exec.executable>/usr/local/hadoop/bin/hadoop</exec.executable>
+                <Env.HADOOP_CLASSPATH>/home/user1/NetBeansProjects/Project2/target/Project2-1.0-SNAPSHOT.jar</Env.HADOOP_CLASSPATH>
+            </properties>
+        </action>
+    </actions>
